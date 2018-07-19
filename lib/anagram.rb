@@ -9,7 +9,6 @@ class Anagram
 
   def match(anagrams)
     anagrams.select do |current_word|
-      binding.pry
       current_word.split("").sort == @word.split("").sort
     end
   end
